@@ -1,6 +1,12 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+@font-face{
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
 
 body {
+    font-family: Arial, sans-serif;
     background-color: #dddddd;
     color: rgba(0, 0, 0, 1);
 }
@@ -16,12 +22,45 @@ div#interface {
 header#cabecalho img#icone {
     position: absolute;
     left: 1050px;
-    top: 40px;
+    top: 70px;
 }
+
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px ;
+}
+
+header#cabecalho h1 {
+    font-family: FonteLogo, sans-serif;
+    font-size: 30px;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: 'Nunito', sans-serif;
+    color: #888888;
+    font-size: 15px;
+    padding: 0px;
+    margin-top: 0px;
+}
+
 
 p {
     text-align: justify;
     text-indent: 50px;
+}
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
 }
 
 figure.foto-legenda {
@@ -61,7 +100,7 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 300px;
+    left: 500px;
 }
 
 nav#menu li{
@@ -86,4 +125,114 @@ nav#menu a:hover{
 
 nav#menu h1{
     display:none;
+}
+
+section#corpo {
+    display: block;
+    width: 600px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
+
+article#noticia-principal h2{
+    font-size: 12pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+
+header#cabecalho-artigo h2 {
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+
+}
+
+header#cabecalho-artigo h3 {
+    font-size: 12pt;
+    color: #606060;
+}
+
+.direita { 
+    text-align: right;
+}
+
+table#tablespec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tablespec td {
+    border: 1px solid #606060;
+    padding: 10px;
+}
+
+table#tablespec td.ce{
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+    text-align: center;
+}
+
+table#tablespec caption {
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+table#tablespec td.cd{
+    background-color: #cecece;
+}
+
+table#tablespec caption span {
+    display: block;
+    float: right;
+    color: #000000;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
+aside#lateral { 
+    display: block;
+    width: 450px;
+    float: right;
+    background-color: #dddddd;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+aside#lateral h1 {
+    font-family: 'FoteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+}
+
+aside#lateral h2 {
+    background-color: #606060;
+    font-size: 15pt;
+    color: #ffffff;
+    padding: 10px;
+}
+
+footer#rodape {
+    border-top: 1px solid #606060;
+    clear: both;
+}
+
+footer#rodape p {
+    text-align: center;
 }
