@@ -1,0 +1,57 @@
+@charset "UTF_8";
+
+
+form#fContato {
+    width: 500px;
+    margin: auto;
+}
+
+form#fContato input, textarea {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+    background-color: rgba(255,255,255,.8);
+
+}
+
+form#fContato input:hover, textarea:hover {
+    background-color: #dddddd;
+}
+
+form#fContato input#button {
+    width: 100px;
+    margin: 10px auto 10px auto;
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 8px;
+}
+
+form#fContato legend {
+    color: #888888;
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: sans-serif;
+}
+
+form#fContato fieldset {
+    border-color: #cecece;
+    margin: 20px;
+}
+
+form#fContato fieldset#sexo {
+    width: 350px;    
+}
+
+form#fContato fieldset#usuario {
+    background: url("../_imagens/icone-contato.png") no-repeat 95% 95%;
+}
+
+form#fContato fieldset#mensagem {
+    background: url("../_imagens/icone-mensagem.png") no-repeat 95% 95%;
+}
+
+form#fContato fieldset#pedido {
+    background: url("../_imagens/icone-pagamento.png") no-repeat 95% 95%;
+}
